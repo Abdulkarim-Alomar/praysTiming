@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    color: #99ff33;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 20px auto;
+    width: 1000px;
+    border: 3px solid #99ff33;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 3px #99ff33;
+}
+.container .info {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #99ff33;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container .info .city-label {
+    margin-right: 5px;
+}
+.container .info  select {
+    background-color: #222;
+    border: 1px solid #99ff33;
+    color: #99ff33;
+    padding: 2px 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.container .info select:focus {
+    outline: none;
+}
+.container .info .date {
+    display: flex;
+    gap: 20px;
+}
+.container .info .date .gregorian{
+    display: flex;
+    gap: 10px;
+}
+.container .info .date .hijri{
+    display: flex;
+    gap: 10px;
+}
+.container .prays {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 15px;
+}
+.container .prays > div {
+    width: 140px;
+    height: 180px;
+    background-color: #99ff33;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0 0 3px #99ff33;
+}
+.container .prays>div .content > div:not(:last-child){
+    margin-bottom: 8px;
+}
